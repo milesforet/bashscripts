@@ -1,4 +1,11 @@
 #!/bin/bash
+#script that creates accounts and groups
+#skips the first line, which is the header that defines the fields(firstname,lastname,group)
+#the userid is the first character of the first name concatenated with the first 5 characters of the last name.
+#a random password is generated for the user
+#the accounts are created and added to the groups according the the CSV file
+#the username and passwords are saved in a file
+
 
 for line in $(cat names2.csv | tail -n +2)
 do
