@@ -1,5 +1,5 @@
 #!/bin/bash
-#this script will add the permissions for a file
+#this script will add the permissions for a file(you specify the filename and all permissions you want to add or remove)
 #the first parameter is who: u, g, o, or a
 #the second argument is for removing or adding permissions
 #the third argument is for permission(r,w,x)
