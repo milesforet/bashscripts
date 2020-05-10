@@ -1,4 +1,11 @@
 #!/bin/bash
+#script that takes a CSV file of first and last names.
+#skips the first line, which only says first and last name
+#creates a userid from the first 6 characters of the last name concatenated with the first 2 characters of the first name
+#Uadduser command creates the user
+#a random password is generated and given to the user.
+#the username and password is stored in a new file
+
 
 for line in $(cat names.csv | tail -n +2)
 do
